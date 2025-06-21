@@ -1,0 +1,295 @@
+/* RESET GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px 15px;
+  background-color: #b71c1c;
+  color: white;
+}
+
+
+.brand {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+header a:hover {
+  color: #ffcccb; /* Un rojo claro al pasar el mouse (opcional) */
+}
+.telefono-header {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.empresa {
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Enlaces del menú */
+.menu a {
+  color: white ;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;  /* Espacio entre icono y texto */
+  transition: color 0.3s ease;
+}
+
+/* Íconos en el menú */
+.menu a i {
+  color: white !important;
+  font-size: 1.1rem;
+}
+/* Menú alineado a la derecha */
+
+
+/* Hover: cambia color */
+.menu a:hover,
+.menu a:hover i {
+  color: #ffcccb !important;
+}
+
+
+/* Menú alineado a la derecha */
+.menu {
+  margin-left: auto;  /* Empuja el menú a la derecha */
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+
+
+
+/* También cambiar al pasar el mouse */
+
+
+
+
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* GRILLA DE CARDS */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 100%;
+  max-width: 320px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Para empujar hacia abajo el precio */
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-bottom: 3rem; /* espacio para la banda */
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 90%;
+  height: auto;
+  margin: 2rem auto 0 auto;
+}
+
+.card h4 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+
+.precio {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+
+.card:hover .precio {
+  color: #b71c1c;
+}
+
+/* Bandas de color en cards */
+.banda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.4rem 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 0 0 1rem 1rem;
+  text-transform: uppercase;
+}
+
+.azul { background-color: #1976d2; }
+.naranja { background-color: #fb8c00; }
+.verde { background-color: #388e3c; }
+.marino { background-color: #3b1975; }
+.rojo { background-color: red; }
+.rosa { background-color: rgb(255, 0, 157); }
+
+.card:hover .banda.azul { background-color: #1565c0; }
+.card:hover .banda.naranja { background-color: #ef6c00; }
+.card:hover .banda.verde { background-color: #2e7d32; }
+.card:hover .banda.rojo { background-color: darkred; }
+.card:hover .banda.marino { background-color: #2a125a; }
+
+/* FOOTER */
+footer {
+  background-color: #141442;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 0.3rem;
+  font-size: 1rem;
+}
+
+/* NOSOTROS */
+.imagen-nosotros img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.nosotros-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* FORMULARIO + MAPA */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.formulario {
+  flex: 1 1 50%;
+  max-width: 450px;
+  min-width: 300px;
+}
+
+.formulario h2 {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+.mapa {
+  flex: 1 1 60%; /* o incluso 70% si quieres más espacio */
+  max-width: 400px; /* puedes subir esto también */
+  min-width: 280px;
+}
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.formulario button {
+  padding: 10px;
+  background-color: #d32f2f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* MAPA PEQUEÑO, A LA DERECHA Y ARRIBA */
+
+
+
+
+
+
+.mapa iframe {
+  width: 100%;
+  height: 350px; /* o más si también lo quieres más alto */
+  border: none;
+  border-radius: 10px;
+}
+
+
+.tarjeta-queso {
+  margin-top: 50px;
+}
