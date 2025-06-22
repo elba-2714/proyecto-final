@@ -197,7 +197,7 @@ h1 {
 .card:hover .banda.verde { background-color: #2e7d32; }
 .card:hover .banda.rojo { background-color: darkred; }
 .card:hover .banda.marino { background-color: #2a125a; }
-.card:hover .banda.purple { background-color: purple}
+.card:hover .banda.purple { background-color: purple;}
 
 /* FOOTER */
 footer {
