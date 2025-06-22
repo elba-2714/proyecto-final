@@ -280,10 +280,6 @@ footer {
 /* MAPA PEQUEÑO, A LA DERECHA Y ARRIBA */
 
 
-
-
-
-
 .mapa iframe {
   width: 100%;
   height: 350px; /* o más si también lo quieres más alto */
@@ -294,4 +290,9 @@ footer {
 
 .tarjeta-queso {
   margin-top: 50px;
+}
+.site-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: 'Great Vibes', cursive;
 }
